@@ -13,7 +13,7 @@ function humanSize(bytes) {
 function card(pkg) {
   const external = pkg.external;
   const badge = pkg.badge ? `<span class="badge ${pkg.warning ? 'warning' : ''}">${escapeHtml(pkg.badge)}</span>` : '';
-  const filename = external ? '' : `<p class="package-filename">${escapeHtml(pkg.filename)}</p>`;
+  const filename = external ? '' : `<p class="package-filename">${escapeHtml(pkg.filename)}${pkg.sourceUrl ? ` <span aria-hidden="true">·</span> <a class="source-link" href="${escapeHtml(pkg.sourceUrl)}" target="_blank" rel="noopener noreferrer">来源：${escapeHtml(pkg.sourceLabel)} ↗</a>` : ''}</p>`;
   const hash = pkg.sha256 ? `<div class="hash-row"><span>SHA-256</span><code>${escapeHtml(pkg.sha256)}</code><button class="copy-button" type="button" data-copy="${escapeHtml(pkg.sha256)}" aria-label="复制 ${escapeHtml(pkg.title)} 的 SHA-256">复制</button></div>` : '';
   return `<article class="package-card" data-platform="${escapeHtml(pkg.platform)}"><div class="platform-icon" aria-hidden="true">${icons[pkg.platform] || '↓'}</div><div class="package-info"><div class="package-title"><h3>${escapeHtml(pkg.title)}</h3>${badge}</div><p class="package-subtitle">${escapeHtml(pkg.subtitle)}</p>${filename}</div><div class="package-actions"><span class="package-size">${humanSize(pkg.bytes)}</span><a class="download-button ${external ? 'external' : ''}" href="${escapeHtml(pkg.url)}" ${external ? 'target="_blank" rel="noopener noreferrer"' : 'download'} aria-label="${external ? '前往' : '下载'} ${escapeHtml(pkg.title)}">${external ? '前往获取' : '立即下载'} <span aria-hidden="true">${external ? '↗' : '↓'}</span></a></div>${hash}</article>`;
 }
