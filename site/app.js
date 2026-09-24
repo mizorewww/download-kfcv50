@@ -1,5 +1,5 @@
 const state = { product: 'chatgpt', platform: 'all', query: '' };
-const icons = { macOS: '⌘', Windows: '⊞', Android: '◉', Linux: '⌘', iOS: '◈' };
+const icons = { macOS: '⌘', Windows: '⊞', Android: '◉', Linux: '>_', iOS: '◈' };
 const list = document.querySelector('#package-list');
 let packages = [];
 
@@ -8,7 +8,7 @@ function escapeHtml(value) {
 }
 function humanSize(bytes) {
   if (!bytes) return '应用商店';
-  return `${(bytes / 1048576).toFixed(bytes >= 104857600 ? 0 : 1)} MB`;
+  return `${(bytes / 1048576).toFixed(bytes >= 104857600 ? 0 : 1)} MiB`;
 }
 function card(pkg) {
   const external = pkg.external;
