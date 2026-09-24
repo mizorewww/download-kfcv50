@@ -46,7 +46,7 @@ function renderProduct(packages, product, device) {
   container.innerHTML = `<p class="recognition">当前识别：${escapeHtml(deviceText)}${device.arch === 'unknown' && device.platform !== 'iOS' ? '；已按常见架构推荐' : ''}</p><div class="package-list">${primary}</div><details class="alternatives"><summary>其他版本 (${alternatives.length})</summary><div class="package-list">${alternatives.map(packageRow).join('')}</div></details>`;
 }
 
-Promise.all([fetch('/data/packages.json').then(r => { if (!r.ok) throw new Error('Failed to load packages'); return r.json(); }), detectDevice()]).then(([data, device]) => {
+Promise.all([fetch('/data/packages.json?rev=ua-downloads',{cache:'no-store'}).then(r => { if (!r.ok) throw new Error('Failed to load packages'); return r.json(); }), detectDevice()]).then(([data, device]) => {
   for (const product of ['chatgpt','flclash']) renderProduct(data.packages, product, device);
 }).catch(() => {
   for (const product of ['chatgpt','flclash']) document.querySelector(`#${product}-list`).textContent = '下载列表暂时无法加载，请稍后重试。';
