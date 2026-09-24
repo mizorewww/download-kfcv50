@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101b24">
+  <meta name="description" content="ChatGPT 与 FlClash 安装包下载中心。查看平台版本、文件大小、来源及 SHA-256 校验值。">
+  <title>下载中心 · KFCV50</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Noto+Sans+SC:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css">
+  <script src="/app.js" defer></script>
+</head>
+<body>
+  <div class="site-shell">
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="KFCV50 下载中心首页"><span class="brand-mark" aria-hidden="true">↓</span><span>KFCV50<span class="brand-light"> / downloads</span></span></a>
+      <nav aria-label="主导航"><a href="#apps">应用下载</a><a href="#guide">安装提示</a><a href="https://github.com/mizorewww/download-kfcv50" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a></nav>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <div class="eyebrow"><span class="status-dot"></span> 为你的设备，找到合适的版本</div>
+          <h1 id="hero-title">好软件，<br><em>即刻</em>启程。</h1>
+          <p>ChatGPT 与 FlClash 安装包集中下载。按系统和架构挑选文件，下载前可查看来源、大小与 SHA-256 校验值。</p>
+          <a class="hero-cta" href="#apps">浏览安装包 <span aria-hidden="true">↗</span></a>
+          <div class="hero-meta"><span>Cloudflare R2 文件分发</span><span class="meta-separator"></span><span id="updated">更新于 2026.09.24</span></div>
+        </div>
+        <div class="hero-art" aria-hidden="true">
+          <div class="orbit orbit-outer"></div><div class="orbit orbit-inner"></div>
+          <div class="art-card card-back"><span class="mini-app-dot"></span><span class="mini-lines"><i></i><i></i></span><span class="mini-circle">↗</span></div>
+          <div class="art-card card-front"><div class="front-icon">↓</div><div class="front-lines"><span></span><span></span><span></span></div><div class="front-footer"><span>READY TO DOWNLOAD</span><b>01 / 02</b></div></div>
+          <div class="art-sticker">ALL<br>PLATFORMS <span>✳</span></div>
+        </div>
+      </section>
+
+      <section class="download-section" id="apps" aria-labelledby="apps-title">
+        <div class="section-heading"><div><div class="section-kicker">01 / APPLICATIONS</div><h2 id="apps-title">选择你的下载</h2><p>所有文件均列出原始来源。请根据设备系统和芯片架构选择。</p></div><span class="file-count" id="file-count">加载中…</span></div>
+        <div class="toolbar"><div class="product-tabs" role="tablist" aria-label="选择应用"><button type="button" class="product-tab active" role="tab" aria-selected="true" data-product="chatgpt">ChatGPT <span id="chatgpt-count"></span></button><button type="button" class="product-tab" role="tab" aria-selected="false" data-product="flclash">FlClash <span id="flclash-count"></span></button></div><label class="search-box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.5"/><path d="m16 16 5 5"/></svg><span class="sr-only">搜索安装包</span><input id="search" type="search" placeholder="搜索系统或架构"></label></div>
+        <div class="filters" role="group" aria-label="筛选操作系统"><button class="filter active" type="button" data-platform="all" aria-pressed="true">全部平台</button><button class="filter" type="button" data-platform="macOS" aria-pressed="false">macOS</button><button class="filter" type="button" data-platform="Windows" aria-pressed="false">Windows</button><button class="filter" type="button" data-platform="Android" aria-pressed="false">Android</button><button class="filter" type="button" data-platform="Linux" aria-pressed="false">Linux</button><button class="filter" type="button" data-platform="iOS" aria-pressed="false">iOS</button></div>
+        <div id="package-list" class="package-list" aria-live="polite"><p class="loading">正在加载安装包…</p></div>
+      </section>
+
+      <section class="guide-section" id="guide" aria-labelledby="guide-title"><div class="section-kicker">02 / BEFORE YOU INSTALL</div><h2 id="guide-title">下载前，了解这些</h2><div class="guide-grid"><article><span class="guide-number">01</span><h3>核对设备架构</h3><p>Apple Silicon 选 arm64；Intel / AMD 选 amd64 或 x64。Linux 还需选择与你的发行版匹配的格式。</p></article><article><span class="guide-number">02</span><h3>校验文件完整性</h3><p>每个本地镜像文件都提供 SHA-256。下载后计算哈希并比较，可确认文件在传输中没有变化。</p></article><article><span class="guide-number">03</span><h3>留意 Android 签名</h3><p>ChatGPT 单 APK 是本地转换并重新签名的版本，不能覆盖安装 Play 版。希望保留原签名，请下载原始 APKM，或使用 Google Play。</p></article></div></section>
+    </main>
+    <footer class="site-footer"><div><strong>KFCV50 <span>/ downloads</span></strong><p>独立下载镜像站。ChatGPT 属于 OpenAI；FlClash 属于其开发者。本站与两者无官方关联。</p></div><div class="footer-links"><a href="https://chatgpt.com/download/" target="_blank" rel="noopener noreferrer">ChatGPT 官网 ↗</a><a href="https://github.com/chen08209/FlClash/releases" target="_blank" rel="noopener noreferrer">FlClash 发布页 ↗</a></div></footer>
+  </div>
+</body>
+</html>
