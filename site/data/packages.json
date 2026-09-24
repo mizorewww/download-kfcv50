@@ -17,20 +17,6 @@
     },
     {
       "product": "chatgpt",
-      "platform": "macOS",
-      "title": "macOS · 在线安装器",
-      "subtitle": "自动选择适配的 Mac 版本 · 需联网",
-      "badge": "官网安装器",
-      "warning": false,
-      "filename": "ChatGPT-mac-installer-web.dmg",
-      "bytes": 848907,
-      "sha256": "f286ede3e5656c6cb901cb1e9503b226e9fd6fcb9c473f5ac68c7132493ed953",
-      "url": "https://files.kfcv50.today/chatgpt/ChatGPT-mac-installer-web.dmg",
-      "sourceLabel": "OpenAI 官网",
-      "sourceUrl": "https://chatgpt.com/download/"
-    },
-    {
-      "product": "chatgpt",
       "platform": "Windows",
       "title": "Windows · x64",
       "subtitle": "26.917.8451.0 · 完整离线包 · Intel / AMD 64 位",
@@ -42,20 +28,6 @@
       "url": "https://files.kfcv50.today/chatgpt/ChatGPT-windows-x64.msix",
       "sourceLabel": "OpenAI CDN",
       "sourceUrl": "https://persistent.oaistatic.com/codex-app-prod/ChatGPT-x64.msix"
-    },
-    {
-      "product": "chatgpt",
-      "platform": "Windows",
-      "title": "Windows · 在线安装器",
-      "subtitle": "Microsoft Store 安装器 · 需联网",
-      "badge": "官网安装器",
-      "warning": false,
-      "filename": "ChatGPT-windows-installer-web.exe",
-      "bytes": 815136,
-      "sha256": "ac4b8b91e681287f709f832205ef2e3e4d3e6e94bd349c9033ac3269b2ddd75a",
-      "url": "https://files.kfcv50.today/chatgpt/ChatGPT-windows-installer-web.exe",
-      "sourceLabel": "OpenAI 官网",
-      "sourceUrl": "https://chatgpt.com/download/"
     },
     {
       "product": "chatgpt",
